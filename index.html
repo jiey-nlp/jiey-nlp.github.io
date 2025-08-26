@@ -19,6 +19,27 @@
   <!-- Favicon -->
   <link rel="icon" href="./assets/Illinois/favicon.ico">
 
+	<script>
+	function myFunction() {
+		var x = document.getElementById("myLinks");
+		if (x.style.display === "inline") {
+		x.style.display = "none";
+		} else {
+		x.style.display = "inline";	
+		}
+	}
+	
+	function reverseLinks() {
+		var container = document.getElementById("myLinks");
+		var links = Array.from(container.getElementsByTagName('a'));
+		container.innerHTML = '';
+		for (var i = links.length - 1; i >= 0; i--) {
+		container.appendChild(links[i]);
+		}
+	}
+		
+	</script>
+
   <!-- Styles -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" />
