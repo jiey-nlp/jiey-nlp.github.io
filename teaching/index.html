@@ -1,116 +1,202 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <title>Jie Yang | University of Wollongong</title>
+  <head>
+    <title>Teaching | Jie Yang | University of Wollongong</title>
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <meta name="description" content="Dr Jie (Jack) Yang is a lecturer at the University of Wollongong. His research lies in Natural Language Processing, Large Language Models, and Multimodality.">
-  <meta name="keywords" content="jie yang, yang jie, university of wollongong, NLP, machine learning">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="Jie Yang">
+    <meta name="keywords" content="jie yang, yang jie, university of wollongong, NLP, machine learning">
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Jie Yang | University of Wollongong">
-  <meta property="og:url" content="https://jiey-nlp.github.io/">
-  <meta property="og:site_name" content="Jie Yang | University of Wollongong">
-  <meta property="og:description" content="Dr Jie (Jack) Yang is a lecturer at the University of Wollongong. His research lies in Natural Language Processing, Large Language Models, and Multimodality.">
-  <meta property="og:locale" content="en_US">
+    <!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Jie Yang | University of Wollongong">
+	<meta property="og:url" content="https://jiey-nlp.github.io/">
+	<meta property="og:site_name" content="Jie Yang | University of Wollongong">
+	<meta property="og:description" content="Dr Jie (Jack) Yang is a lecturer at the University of Wollongong. His research lies in Natural Language Processing, Large Language Models, and Multimodality.">
+	<meta property="og:locale" content="en_US">
 
-  <!-- Favicon -->
-  <link rel="icon" href="./assets/Illinois/favicon.ico">
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/pub.css">
-  <link rel="stylesheet" href="./assets/css/nav.css">
-</head>
-
-<body>
+    <link rel="icon" href="../assets/Illinois/favicon.ico">
+    <link rel="manifest" href="../assets/Illinois/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../assets/Illinois/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin=anonymous>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/pub.css">
+    <link rel="stylesheet" href="../assets/css/nav.css">
     
-  <div class="topnav">
-    <div id="myLinks">        
-      <a class="normal right" href="./teaching/">Teaching</a>	
-      <a class="normal" href="./services/">Services</a>
-      <a class="normal" href="./talks/">Talks</a>
-      <a class="normal" href="./publications/">Publications</a>  
-      <a class="normal" href="./">Home</a>
+    <script src="../assets/js/github-stars.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/favicon-switcher.js" type="application/javascript"></script>
+    
+    <script type="text/javascript">
+      function toggle_vis(id) {
+          var e = document.getElementById(id);
+          if (e.style.display == 'none')
+              e.style.display = 'inline';
+          else
+              e.style.display = 'none';
+      }
+   </script>
+
+   <script>
+      function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "inline") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "inline";
+        
+      }
+      }
+
+      function reverseLinks() {
+    var container = document.getElementById("myLinks");
+    var links = Array.from(container.getElementsByTagName('a'));
+    container.innerHTML = '';
+    for (var i = links.length - 1; i >= 0; i--) {
+      container.appendChild(links[i]);
+    }
+  }
+   </script>
+   
+   
+
+  </head>
+  <body>
+    
+<div class="topnav">
+	
+		<div id="myLinks">        
+		<a class="normal right" href="./teaching/">Teaching</a>	
+		<a class="normal" href="./services/">Services</a>
+		<a class="normal" href="./talks/">Talks</a>
+		<a class="normal" href="./publications/">Publications</a>  
+		<a class="normal" href="././">Home</a>
+		</div>
+
+		<a href="javascript:void(0);" class="icon" onclick="myFunction();reverseLinks()">
+		<i class="fa fa-bars"></i>
+		</a>
+      
     </div>
 
-    <a href="javascript:void(0);" class="icon" onclick="myFunction();reverseLinks()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
+
     
 
-  <script src="./assets/js/vanilla-back-to-top.min.js"></script>
-  <script>
-    addBackToTop({
-      backgroundColor: '#fff',
-      innerHTML: 'Back to Top',
-      textColor: '#333'
-    })
-  </script>
-  <style>
-    #back-to-top {
-      border: 1px solid #ccc;
-      border-radius: 0;
-      font-size: 15px;
-      width: 100px;
-      text-align: center;
-      line-height: 30px;
-      height: 30px;
-    }
-  </style>
+    <script src="../assets/js/vanilla-back-to-top.min.js"></script>
+    <script>addBackToTop({
+        backgroundColor: '#fff',
+        innerHTML: 'Back to Top',
+        textColor: '#333'
+      })
+    </script>
+    <style>
+        #back-to-top {
+          border: 1px solid #ccc;
+          border-radius: 0;
+          font-size: 15px;
+          width: 100px;
+          text-align: center;
+          line-height: 30px;
+          height: 30px;
+        }
+    </style>
     
-  <div class="wrapper">
-    <header>
-      <a class="image avatar"><img src="./jiey/avatar.jpg" alt="avatar" /></a>
+    <div class="wrapper">
+      <header>
         
-      <h1>Jie Yang</h1>
-      <p style="font-size:1.10rem;">Lecturer (Assistant Professor)</p>
-      <br>
-      <a href="https://www.uow.edu.au/" rel="noopener">University of Wollongong</a>
-      <br>
-      <p>jiey (at) uow.edu.au</p>        
-      <br>
         
-      <div class="social-icons">
-        <a style="margin: 0 5px 0 0" href="https://scholar.google.com.au/citations?user=LcTT0YQAAAAJ&hl=en&oi=ao">
+        <a class="image avatar"><img src="https://img.yliu.me/avatar_new.jpg" alt="avatar" /></a>
+        
+
+        <h1>Yaoyao Liu</h1>
+
+        
+        <position style="font-size:1.10rem;">Assistant Professor</position>
+        <br>
+        
+        
+        <a href="https://www.illinois.edu/" rel="noopener"><autocolor>University of Illinois<br>Urbana-Champaign</autocolor></a>
+        <br>
+        
+        
+        <email>lyy (at) illinois.edu</email>
+        
+        
+        
+        <br>
+        <br>
+
+        
+
+        
+        <div class="social-icons">
+        
+        <a style="margin: 0 5px 0 0" href="https://scholar.google.com/citations?user=Qi2PSmEAAAAJ">
           <i class="ai ai-google-scholar" style="font-size:1.2rem"></i>
         </a>  
         
-        <a style="margin: 0 5px 0 0" href="https://github.com/jiey-nlp">
+
+        
+
+        
+        <a style="margin: 0 5px 0 0" href="https://github.com/yaoyao-liu/">
           <i class="fab fa-github"></i>
         </a>
-                
-        <a style="margin: 0 5px 0 0" href="https://www.linkedin.com/in/jackyanguow/?originalSubdomain=au">
-          <i class="fab fa-linkedin"></i>
-        </a>        
-      </div>
         
-      <br>
-    </header>
-	  
-    <section>
-      <h2 id="teaching" style="margin: 60px 0px -15px;">Teaching</h2>
-      <ul>
-        <li>Autumn 2025: <a href="/">Software Engineering Project (CSIT314)</a></li>
-      </ul>
-      <br>
-    </section>
 
-    <footer>
-      <div style="font: 12px/1.2 Crimson Pro, serif">
+        
+        <a style="margin: 0 5px 0 0" href="https://www.linkedin.com/in/liuyaoyao/">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        
+
+        
+        <a style="margin: 0 0 0 0" href="https://twitter.com/YaoyaoLiu1/">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        
+        </div>
+        
+        <br>
+
+      </header>
+      <section>
+
+      <h1 id="teaching"></h1>
+
+<h2 style="margin: 60px 0px -15px;">Teaching</h2>
+<p><br /></p>
+
+<ul>
+  <li>Spring 2025: <a href="https://yaoyaoliu.web.illinois.edu/teaching/IS327/">Concepts of Machine Learning</a> (IS327)</li>
+</ul>
+
+
+      <br>
+
+      
+
+      <br>
+      
+      </section>
+      <footer>
+        <div style="font: 12px/1.2 Crimson Pro, serif">
         <p>
-          <small>&copy; 2025 Jie Yang. All rights reserved.</small>
+        <small>
+        
+        
+        </small>
         </p>
-      </div>
-      <br><br>
-    </footer>
-  </div>
-
-  <script src="/assets/js/scale.fix.js"></script>
-</body>
+        </div>
+        <br>
+        <br>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+  </body>
 </html>
