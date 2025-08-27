@@ -92,23 +92,15 @@
       font-weight: bold;
     }
     .pub-list {
-      display: none; /* 默认隐藏 */
-      margin: 0;
-      padding: 10px 20px;
-      border-left: 2px solid #ccc;
-      border-right: 2px solid #ccc;
-      border-bottom: 2px solid #ccc;
-      background: #fafafa;
-    }
-
-	.pub-list {
-	padding-left: 0;   /* 去掉左侧缩进 */
-	margin: 0;         /* 去掉 ul 默认 margin */
+	  display: none; /* 默认隐藏 */
+	  margin: 0;
+	  padding: 5px 0;   /* 给上下留一点间距 */
+	  background: #fafafa; /* 如果连背景色也不要，可以直接删掉这行 */
 	}
+
 	.pub-list li {
-	margin-bottom: 2px;   /* 调小间距，原来是 5px */
-	padding: 2px 0;       /* 上下留很小的空间 */
-	list-style: none;
+	  margin: 2px 0;   /* 控制更紧凑 */
+	  list-style: none;
 	}
     .title a { text-decoration: none; color: #0066cc; }
     .title a:hover { text-decoration: underline; }
