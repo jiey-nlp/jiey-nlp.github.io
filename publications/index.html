@@ -100,10 +100,16 @@
       border-bottom: 2px solid #ccc;
       background: #fafafa;
     }
-    .pub-list li {
-      margin-bottom: 5px;
-      list-style: none;
-    }
+
+	.pub-list {
+	padding-left: 0;   /* 去掉左侧缩进 */
+	margin: 0;         /* 去掉 ul 默认 margin */
+	}
+	.pub-list li {
+	margin-bottom: 2px;   /* 调小间距，原来是 5px */
+	padding: 2px 0;       /* 上下留很小的空间 */
+	list-style: none;
+	}
     .title a { text-decoration: none; color: #0066cc; }
     .title a:hover { text-decoration: underline; }
   </style>
