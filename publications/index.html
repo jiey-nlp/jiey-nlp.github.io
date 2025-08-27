@@ -43,6 +43,23 @@
       }
    </script>
 
+<script>
+  function expandAll() {
+    var lists = document.getElementsByClassName("pub-list");
+    for (var i = 0; i < lists.length; i++) {
+      lists[i].style.display = "block";
+    }
+  }
+
+  function collapseAll() {
+    var lists = document.getElementsByClassName("pub-list");
+    for (var i = 0; i < lists.length; i++) {
+      lists[i].style.display = "none";
+    }
+  }
+</script>
+
+
    <script>
       function myFunction() {
       var x = document.getElementById("myLinks");
@@ -171,10 +188,17 @@
         
       <h1 id="publications"></h1>
 
+
+
 <h2 style="margin: 60px 0px -15px;">Publications 
 	<temp style="font-size:15px;">[</temp><a href="https://scholar.google.com.au/citations?user=LcTT0YQAAAAJ&hl=en&oi=ao" target="_blank" style="font-size:15px;">Google Scholar</a><temp style="font-size:15px;">]</temp>
-	</h2>
+</h2>
 
+<div style="margin:10px 0;">
+  <button onclick="expandAll()">Expand All</button>
+  <button onclick="collapseAll()">Collapse All</button>
+</div>
+		  
 <div class="publications">
 <ol class="bibliography">
 
