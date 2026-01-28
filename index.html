@@ -37,7 +37,46 @@
 		container.appendChild(links[i]);
 		}
 	}
-		
+
+	// ===== News show/hide =====
+  var NEWS_VISIBLE_COUNT = 5;
+  var newsExpanded = false;
+
+  function applyNewsVisibility() {
+    var ul = document.getElementById("newsList");
+    var btn = document.getElementById("newsToggleBtn");
+    if (!ul) return;
+
+    var items = ul.getElementsByTagName("li");
+    var total = items.length;
+
+    // 如果不足 5 条，按钮直接隐藏
+    if (btn) {
+      btn.style.display = (total > NEWS_VISIBLE_COUNT) ? "inline-block" : "none";
+    }
+
+    for (var i = 0; i < total; i++) {
+      if (!newsExpanded && i >= NEWS_VISIBLE_COUNT) {
+        items[i].style.display = "none";
+      } else {
+        items[i].style.display = "";
+      }
+    }
+
+    if (btn) {
+      btn.textContent = newsExpanded ? "Show less" : "Show more";
+    }
+  }
+
+  function toggleNews() {
+    newsExpanded = !newsExpanded;
+    applyNewsVisibility();
+  }
+
+  // 页面加载完后默认收起
+  document.addEventListener("DOMContentLoaded", function () {
+    applyNewsVisibility();
+  });
 	</script>
 
   <!-- Styles -->
@@ -143,7 +182,7 @@ If our interests align, feel free to reach out.</p>
 
 <h2 style="margin: 60px 0px 10px;">News</h2>
 
-<ul>
+<ul id="newsList">
 <li><strong>11/2025</strong> 🎉 2 papers are accepted to <span style="color: blue;">AAAI 2026</span>.</li>
 <li><strong>10/2025</strong> 🎉 2 papers are accepted to <span style="color: blue;">IEEE Big Data 2025</span>.</li>
 <li><strong>09/2025</strong> 🎉 1 paper about <a href="./publications">Causal Discovery</a> is accepted to <span style="color: blue;">Chaos</span>.</li>
@@ -153,11 +192,11 @@ If our interests align, feel free to reach out.</p>
 <li><strong>03/2025</strong> 🎉 1 paper about <a href="./publications">Multimodal Learning</a> is accepted to <span style="color: blue;">IEEE Transactions on Biometrics, Behavior, and Identity Science</span>.</li>
 <li><strong>02/2025</strong> 🎉 1 paper about <a href="./publications">Adversarial Learning</a> is accepted to <span style="color: blue;">PAKDD 2025</span>.</li>
 <li><strong>02/2025</strong> 🎉 1 paper about <a href="./publications">Information Retrieval</a> is accepted to <span style="color: blue;">ICASSP 2025</span>.</li>
-
-
-
-
 </ul>
+
+<button id="newsToggleBtn" class="news-toggle" type="button" onclick="toggleNews()">
+  Show more...
+</button>
 
 <h2 style="margin: 60px 0px 10px;">Contact</h2>
 
